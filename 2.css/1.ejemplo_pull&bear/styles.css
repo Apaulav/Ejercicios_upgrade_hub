@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "graphik";
+    src: url("./fuentes/Graphik-Regular.ttf");
+  }
+
+.body {
+    font-family: graphik;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    /*Es como el absolute, pero no depende del contenido, 
+    esto se solapa al contenido, entonces hay que darle un padding-top
+    al contenido para que no se pise*/
+    position: fixed;
+    /*Indicar donde va el pixel*/
+    top: 0;
+    left: 0;
+    /*Indicar donde va el pixel*/
+    width: 100%;
+    /*background: white;*/
+}
+/*Quita los puntos de la lista ordenada*/
+.rastro_migas {
+    list-style: none;
+}
+
+.rastro_migas li{
+    display: inline-block;
+}
+
+.rastro_migas li a{
+    color: #d6d6d6;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*last-child es para elegir el ultimo elemento en este caso del li*/
+.rastro_migas li:last-child a {
+    color: #000;
+}
+
+.main {
+    text-align: center;
+    padding-top: 130px;
+}
+
+.main .product {
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    
+}
+
+.product-img {
+    max-width: 100%;
+}
+
+/*Se pone un filtro de escala de grises a la clase product-img*/
+.product-img:hover {
+    filter: grayscale(100%);
+}
+
+.product-text {
+    padding: 2px;
+    font-size: 12px;
+}
+
+.product-precio {
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.titulo2 {
+    padding: 30px;
+    font-size: 27px;
+    font-weight: bold; 
+}
+
+.parrafo_final {
+    text-align: center;
+    max-width: 512px;
+    margin: auto;
+}
+
+.menu_abajo {
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+
+.descuento {
+    font-size: 34px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.suscripcion {
+    font-size: 34px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.contacto {
+    font-size: 11px;
+    text-align: center;
+    padding: 30px;
+}
+
+.titulo_contacto {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu_contacto {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul .menu_contacto.telefono a {
+    color:#6fd5a4;
+}
+ .menu_contacto a {
+     padding: 5px;
+ }

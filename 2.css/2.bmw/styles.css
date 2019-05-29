@@ -1,0 +1,20 @@
+header {
+    background-image: url('./imagenes/slider.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+}
+
+.menu_principal{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+
+.tipos {
+    display: inline-block;
+}

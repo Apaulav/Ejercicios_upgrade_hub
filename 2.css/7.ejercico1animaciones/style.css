@@ -1,0 +1,22 @@
+@keyframes latir {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.10);
+    }
+    100% {
+        transform: scale(0);
+    }
+
+}
+
+.animacion_corazon {
+    padding: 50px;
+    width: 100px;
+    animation-name: latir;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

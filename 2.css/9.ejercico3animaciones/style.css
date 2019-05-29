@@ -1,0 +1,28 @@
+.circulo {
+        width: 100px;
+        height: 100px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: white;
+        border: black solid 1px;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(-360deg)
+    }
+}
+
+
+
+.aguja {
+    width: 120px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    animation-name: rotar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
