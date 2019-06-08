@@ -5,7 +5,7 @@ function notas() {
         var nota = prompt ("Introduce una nota");
         nota = nota.toUpperCase();
         if (nota != "FIN"){
-            nota = parseFloat(nota,2);
+            nota = parseFloat(nota);
             if (nota <= 10) {
                 notasIntroducidas.push(nota);
                 console.log(nota);
