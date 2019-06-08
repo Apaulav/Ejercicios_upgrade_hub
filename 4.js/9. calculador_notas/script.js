@@ -24,7 +24,7 @@ function notas() {
     }
     media = media/notasIntroducidas.length;
     //Imprimir la media
-    alert("La media de tus notas es " + media);
+    alert("La media de tus notas es " + media.toFixed(2));
     //Indicar si es suspenso, suficiente, bien, etc
     if (media < 5) {
         alert("Sigue intentando, tu nota es un suspenso");
