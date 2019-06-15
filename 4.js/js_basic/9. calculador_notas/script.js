@@ -36,7 +36,7 @@ function notas() {
         alert("Has sacado un Notable");
     } else if (media < 10) {
         alert("Has sacado un sobresaliente, ¡Enhorabuena!");
-    } else if (media = 10) {
+    } else if (media == 10) {
         alert("Has sacado matrícula, ¡Enhorabuena!");
     }
 }

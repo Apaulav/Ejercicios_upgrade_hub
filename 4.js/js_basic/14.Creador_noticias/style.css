@@ -1,0 +1,32 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__seccion-izda {
+  width: 50%;
+}
+
+.main__seccion-drcha {
+  width: 50%;
+}
+
+.articulos__titulo {
+  font-size: 25px;
+}
+
+.articulos__autor {
+  font-size: 13px;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formulario__input {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

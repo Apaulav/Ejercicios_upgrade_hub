@@ -1,0 +1,12 @@
+.botones{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+li {
+    background-color: #837c7c;
+    color: white;
+    padding: 5px;
+}
