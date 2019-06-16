@@ -48,3 +48,9 @@ console.log(miCalculadora.multiplicar(2,3));
 console.log(miCalculadora.dividir(2,3));
 console.log(miCalculadora.potencia(2,3));
 console.log(miCalculadora.limpiar());
+
+class Cutronga extends Calculadora {
+    constructor() {     
+        super();   
+    } 
+}
