@@ -25,8 +25,7 @@ function reproducir () {
             volume.classList.add("hidden");
             silent.classList.remove("hidden");
         }
-        var progreso = barraprogreso();
-        bucle = window.setInterval(progreso, 1000);
+        bucle = window.setInterval(barraprogreso, 1000);
         //bucle = setInterval(barraprogreso,1000);
         //time.html(toHMS(video.currentTime));
         //time.value +=5;
@@ -65,7 +64,8 @@ function reproducir () {
     });
 };
 
-
+var maximo = 700;
+var time = document.getElementById("timer");
 function barraprogreso() {
     /*
     objeto video
@@ -78,8 +78,7 @@ function barraprogreso() {
         - play()
         - pause()
     */
-    var maximo = 700;
-    var time = document.getElementById("timer");
+    
     if (video.ended == false) {
         //tiempo en el que me encuentro * maximo de tiempo, divido tiempo total del video
         var total = parseInt(video.currentTime*maximo/video.duration);
