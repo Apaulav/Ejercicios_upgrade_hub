@@ -9,8 +9,6 @@ function reproducir () {
     var time = document.getElementById("timer");
     var volume = document.getElementById("volumeButton");
     var silent = document.getElementById("noVolumeButton");
-    var maximo = 200;
-    var bucle;
 
     play.addEventListener("click", function() {
         video.play();
@@ -27,7 +25,8 @@ function reproducir () {
             volume.classList.add("hidden");
             silent.classList.remove("hidden");
         }
-        barraprogreso();
+        var progreso = barraprogreso();
+        bucle = window.setInterval(progreso, 1000);
         //bucle = setInterval(barraprogreso,1000);
         //time.html(toHMS(video.currentTime));
         //time.value +=5;
@@ -64,7 +63,7 @@ function reproducir () {
         silent.classList.add("hidden");
         volume.classList.remove("hidden");
     });
-}
+};
 
 
 function barraprogreso() {
@@ -79,12 +78,14 @@ function barraprogreso() {
         - play()
         - pause()
     */
+    var maximo = 700;
+    var time = document.getElementById("timer");
     if (video.ended == false) {
         //tiempo en el que me encuentro * maximo de tiempo, divido tiempo total del video
         var total = parseInt(video.currentTime*maximo/video.duration);
         //Rellena la barra
         time.style.widht = total+"px";
-    }
-}
+    };
+};
 
 window.onload =reproducir;

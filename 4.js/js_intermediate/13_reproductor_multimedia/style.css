@@ -1,0 +1,35 @@
+.VideoContainer {
+    width: 80%;
+    border: 2px solid black;
+}
+
+.video {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 5px;
+}
+
+.icon {
+    width: 20px;
+}
+
+.progress {
+    border: 1px solid black;
+    width: 700px;
+    height: 15px;
+}
+
+.time {
+    width: 0px;
+    height: 15px;
+    
+    background-color: black;
+}
+
+.hidden {
+    display: none;
+}
