@@ -10,9 +10,12 @@ export class AppComponent {
 
   anadirNoticia() {
     public Noticia = [
-      
+      {
+        title:
+        body:
+      },
 
-    ];
+    ]
   
 
   }
