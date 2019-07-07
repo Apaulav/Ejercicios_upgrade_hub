@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <!--Input [] output ()-->
+      <app-form-noticia (escucharCreacionNuevaNoticia) = "anadirNoticia($event)"></app-form-noticia>
+    </div>
+    <div class="col-8">   
+      <app-noticia [noticias]="noticia"></app-noticia>
+      <app-noticia ></app-noticia>
+      
+
+    </div>
+  </div>
+</div>
