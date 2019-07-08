@@ -1,0 +1,4 @@
+<div class="app-faq-list">
+    <!--Con esto recorremos todos los titles y bodys hasta que pinte todo lo que hemos puesto en el array faq-->
+    <app-faq-item *ngFor="let faq of faqs" [title] = "faq.title" [body]= "faq.body"></app-faq-item>
+</div>

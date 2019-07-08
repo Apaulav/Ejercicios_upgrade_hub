@@ -1,0 +1,41 @@
+.app-faq-item
+    &__header
+        background: grey
+        color: black        
+        position: relative
+        padding: 10px
+    
+        &--opened
+            background: blue
+            color: #fff
+            
+    &__body
+        height: 0        
+        // display: none
+        transform: scaleY(0)
+        //por defecto no me lo muestre
+        overflow: hidden
+        transition: transform 1s ease-in-out
+
+        &--opened
+            height: auto
+            // display: block
+            transform: scaleY(1)
+            
+    &__body-wrapper
+        padding: 10px
+        border: 1px solid #CCC
+        
+            
+    
+
+.app-faq-item-icon
+    position: absolute
+    top: 14px
+    right: 14px
+    transition: transform 1s ease-in-out
+    &--opened
+        transform: rotate(180deg)
+
+.app-faq-item-question
+    margin: 0

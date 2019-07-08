@@ -1,0 +1,18 @@
+<div class="app-faq-item">
+    <div class="app-faq-item__header" [ngClass]="{'app-faq-item__header--opened': opened}" (click)="changeState()">
+        <h2 class="app-faq-item-question">{{ title }}</h2>
+        <span class="app-faq-item-icon" [ngClass]="{'app-faq-item-icon--opened': opened}">
+            <i class="fas fa-chevron-down"></i>
+        </span>
+    </div>
+    <!-- Esto se usaba antes de hacer las trasiciones
+    <div *ngIf="opened" class="app-faq-item__body">
+        {{body}}
+    </div> -->
+    <!--NGclass-->
+    <div class="app-faq-item__body" [ngClass]="{'app-faq-item__body--opened': opened}">
+        <div class="app-faq-item__body-wrapper">
+            {{body}}
+        </div>
+    </div>
+</div>
