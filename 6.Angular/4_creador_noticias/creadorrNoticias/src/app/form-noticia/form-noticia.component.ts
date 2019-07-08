@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Noticia } from '../app.component';
 
 @Component({
   selector: 'app-form-noticia',
@@ -25,7 +26,7 @@ export class FormNoticiaComponent implements OnInit {
     const body = (<HTMLInputElement>document.getElementById("body"));
     console.log(body.value);
 
-    const noticia = {
+    const noticia:Noticia = {
       title: title.value,
       body: body.value
     };

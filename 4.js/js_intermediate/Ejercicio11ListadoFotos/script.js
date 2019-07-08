@@ -1,106 +1,5 @@
-class AlbumPhotos {
 
-    constructor(userId, id, title) {
- 
-        this._userId = userId;
- 
-        this._id = id;
- 
-        this._title = title;
- 
-    }    
-    draw() {
- 
-        let albumRow = document.querySelector("tr");
- 
-        let contentRow = `
- 
-        <td>${this._userId}</td>
- 
-        <td>${this._id}</td>
- 
-        <td>${this._title}</td>
- 
-        <td><button id="SeeAlbum" class="my-button">Ver Album</button></td>`;
- 
-        albumRow.innerHTML = contentRow;        
-        albumRow.querySelector("#SeeAlbum").addEventListener("click", () => {
- 
-            this.fetchAlbumPhotos.draw();
- 
-        });        
-        
-        let tableBody = document.querySelector("#album-data");
- 
-        tableBody.appendChild(albumRow);    }    fetchAlbumPhotos() {
- 
-        fetch("https://jsonplaceholder.typicode.com/photos")
- 
-            .then((response) => {
- 
-                return response.json();
- 
-            })
- 
-            .then((photosResponse) => {
- 
-                this.handlePhotosResponse(photosResponse);
- 
-            });
- 
-    }    handlePhotosResponse(data) {
- 
-        // pintamos las fotos
- 
-        // pintar solo las de este album
- 
-    }}
-    
-    
-    class Albums {
- 
-    constructor() {
-        this._albums = [];
-    }    
-    
-    init() {
-        this.fetchDataAlbums();
-    }
-    fetchDataAlbums() {
- 
-        const albumsUrl = "https://jsonplaceholder.typicode.com/albums";
-        //fetch devuelve la lista
-        fetch(albumsUrl)
-
-            .then((response) => {
-                return response.json();
-            })
-
-        .then((albumsResponse) => {
-
-            this.handlePhotosResponse(albumsResponse);
-});
- 
-    }
- 
-    handlePhotosResponse(urlAlbums) { 
-        this._albums = [];
-        //Recorre la lista de albunes hasta que se acaba.
-        for (const datos of urlAlbums) {
-            let albumObj = new AlbumPhotos(datos.userId, datos.Id, datos.title);
-            this._albums.push(albumObj);
-        }
-        this.drawAllAlbums();      
-    }
- 
- }
-
-
- //creamos una función para que se carge al cargar la página
- 
-
-
- // clase que hace la peticion al listado de albunes
+// clase que hace la peticion al listado de albunes
 class Albums {
     constructor() {
         this._albums = [];
@@ -170,6 +69,48 @@ class Albums {
 
 }
 
+/* class AlbumPhotos {
+    constructor(userId, id, title) {
+        this._userId = userId;
+        this._id = id;
+        this._title = title;
+    }
+
+    draw() {
+        let albumRow = document.querySelector("tr");
+        let contentRow = `
+        <td>${this._userId}</td>
+        <td>${this._id}</td>
+        <td>${this._title}</td>
+        <td><button id="SeeAlbum" class="my-button">Ver Album</button></td>
+        `;
+        albumRow.innerHTML = contentRow;
+
+        albumRow.querySelector("#SeeAlbum").addEventListener("click", () => {
+            this.fetchAlbumPhotos.draw();
+        });
+
+        let tableBody = document.querySelector("#album-data");
+        tableBody.appendChild(albumRow);
+
+    }
+
+    fetchAlbumPhotos() {
+        fetch("https://jsonplaceholder.typicode.com/photos")
+            .then((response) => {
+                return response.json();
+            })
+            .then((photosResponse) => {
+                this.handlePhotosResponse(photosResponse);
+            });
+    }
+
+    handlePhotosResponse() {
+        
+    }
+
+}
+ */
 let init = () => {
     let album = new Albums();
     album.fetchDataAlbums().then(
@@ -185,9 +126,20 @@ let init = () => {
                 const id = item.getAttribute("data-id")
                 album.getPhotosByAlbumId(id);
                     })
-            });   
-        }   
-    )  
+            });
+            
+        }
+        
+    )
+
+   
 }
 
+
+
 window.addEventListener("load", init)
+
+
+
+
+

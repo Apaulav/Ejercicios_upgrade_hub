@@ -25,7 +25,7 @@ function reproducir () {
             volume.classList.add("hidden");
             silent.classList.remove("hidden");
         }
-        bucle = window.setInterval(barraprogreso, 1000);
+        bucle = window.setInterval() => {barraprogreso();, 1};
         //bucle = setInterval(barraprogreso,1000);
         //time.html(toHMS(video.currentTime));
         //time.value +=5;
