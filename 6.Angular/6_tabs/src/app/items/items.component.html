@@ -1,0 +1,9 @@
+<div class="items">
+    <div class="items__header">
+        <ul class="items__list">
+            <li class="items__li" (click) = "clickar()">{{title}}</li>
+        </ul>
+    </div>
+   
+</div>
+<p class="hidden" [ngClass]="{'hidden--changed': changed}">{{body}}</p>

@@ -1,0 +1,10 @@
+<div>
+    <div class="tabs-component">
+        <div>
+            <app-items class="tabs-component__items"  *ngFor="let tab of tabs" [title] = "tab.title" [body]= "tab.body"></app-items>
+        </div>
+            
+        <app-arrow></app-arrow>
+    </div>
+    <app-parraf></app-parraf>
+</div>
