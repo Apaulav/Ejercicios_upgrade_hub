@@ -1,0 +1,26 @@
+<h1>
+  <a routerLink="/home">FNAC</a>
+</h1>
+
+<h2>
+  <a routerLink="/films">Films</a>
+</h2>
+
+<section>
+  <div *ngFor="let film of films; let i = index;">
+    <ng-container *ngIf="i < 3">
+      <h3>
+        <a routerLink="/films/{{ i }}">{{ film.title }}</a>
+      </h3>
+      <p>{{ film.director }}</p>
+    </ng-container>
+  </div>
+</section>
+
+<h2>
+  <a routerLink="/games">Games</a>
+</h2>
+
+<h2>
+  <a routerLink="/discs">Discs</a>
+</h2>

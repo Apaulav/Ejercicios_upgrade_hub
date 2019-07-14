@@ -1,0 +1,16 @@
+<button mat-raised-button color="primary" (click)="goToVideos()">Videos</button>
+
+<br>
+
+<mat-slide-toggle (change)="hidePictures($event)">
+  Slide me!
+</mat-slide-toggle>
+
+<mat-tab-group (selectedTabChange)="changeTab($event)" [selectedIndex]="selectedIndex">
+    <mat-tab *ngFor="let tab of tabs" label="{{ tab }}">
+
+    </mat-tab>
+    
+  </mat-tab-group>
+  
+<router-outlet></router-outlet>

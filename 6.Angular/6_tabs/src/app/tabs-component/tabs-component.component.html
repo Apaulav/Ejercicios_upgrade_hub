@@ -1,6 +1,8 @@
 <div>
     <div class="tabs-component">
         <div>
+            <!-- Descomponer title y body-->
+            <!-- Hacer un output para que el padre se entere cuando está abierto un parrafo o cuando otro -->
             <app-items class="tabs-component__items"  *ngFor="let tab of tabs" [title] = "tab.title" [body]= "tab.body"></app-items>
         </div>
             

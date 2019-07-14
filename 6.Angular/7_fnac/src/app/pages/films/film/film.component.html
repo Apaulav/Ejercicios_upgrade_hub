@@ -1,0 +1,26 @@
+<h1>
+  <a routerLink="/home">FNAC</a>
+</h1>
+
+<h2>
+  <a routerLink="/films">Films</a>
+</h2>
+<h2>
+  <a routerLink="/discs">Discs</a>
+</h2>
+<h2>
+  <a routerLink="/games">Games</a>
+</h2>
+
+<section *ngIf="film">
+  <h3>{{ film.title }}</h3>
+
+  <p>{{ film.director }}</p>
+
+  <p>{{ film.duration }}</p>
+
+  <p>{{ film.year }}</p>
+
+  <p>{{ film.actors }}</p>
+
+</section>
