@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Proyecto final JS</title>
+</head>
+<body class="body">
+    <section class="section-izda">
+        <h1>Creador de formularios</h1>
+        <div>
+            <label for="etiquetacontrol">¿Cúal es la etiqueta que quieres que apareza?</label>
+            <br>
+            <input class="texto" id="texto" type="text" placeholder="Ej: Nombre">
+            <input type="button" value="Añadir campo texto" onclick="campoTexto()">
+        </div>
+        <div>
+            <label for="etiquetacontrol">¿Cúal es la etiqueta que quieres que apareza?</label>
+            <br>    
+            <input id="numero" type="text" placeholder="Ej: Edad">
+            <input type="button" value="Añadir campo número" onclick="campoNumero()">
+        </div>
+        <div>
+            <label for="etiquetacontrol">¿Cúal es la etiqueta que quieres que apareza?</label>
+            <br>    
+            <input id="mail" type="text" placeholder="Ej: Email">
+            <input type="button" value="Añadir campo e-mail" onclick="campoMail()">
+        </div>
+        <div>
+            <label for="lista">Que datos quieres introducir en la lista (tienes que separar cada elemento de la lista con comas).</label>
+            <br>
+            <label for="">Nombre etiqueta</label>
+            <input id="boton" type="text" placeholder="Ej: Sexo">
+            <br>
+            <textarea id="lista" cols="30" rows="10" placeholder="Ej: Mujer, Hombre"></textarea>
+            <br>
+            <label for="">¿Quieres que se puedan selecionar varios datos?</label>
+            Sí <input class="si" class="radiobutton" type="radio" name="lista" value="si" > 
+            No <input class="no" class="radiobutton" type="radio" name="lista" value="no"> 
+            <br>
+            <input type="button" value="Añadir lista de selección" onclick="campoLista()">
+        </div>
+        <div>
+            <label for="btn">Introduzca texto para el botón</label>
+            <input id="boton" type="text" placeholder="Ej: Enviar">
+            <input type="button" value="Añadir botón del formulario" onclick="boton()">
+
+        </div>
+    </section>
+    <section id="section-drcha" class="section-drcha">
+        
+        <h1>Formulario</h1>
+    </section>
+</body>
+</html>

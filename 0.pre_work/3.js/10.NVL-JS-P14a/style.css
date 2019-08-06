@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+.tituloleyenda {
+    font-weight: bold
+}
+.tablaimg {
+    width: 30px;
+}
